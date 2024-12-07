@@ -1,0 +1,83 @@
+/* Importa las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+/* Tailwind base, componentes y utilidades */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aplica la fuente Outfit globalmente */
+* {
+  font-family: Outfit;
+}
+
+/* Clase personalizada para la fuente Prata */
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Elimina el scroll predeterminado */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilo para los enlaces activos */
+a.active hr {
+  display: block;
+}
+
+/* Establece el fondo gris para todo el programa */
+body {
+  background-color: #f0f0f0; /* Gris claro */
+  color: #333; /* Color de texto general */
+}
+
+/* Estilos para el texto llamativo */
+h1, h2, h3, h4 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800; /* Peso más fuerte para hacer el texto más llamativo */
+  text-transform: uppercase; /* Hace que el texto sea mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para el texto */
+}
+
+/* Subtítulos o textos importantes */
+p, .font-medium {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600; /* Pesado, pero no tan fuerte como los encabezados */
+  color: #444; /* Un gris más oscuro para el texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Hacer que el texto se resalte con un color más vibrante para elementos clave */
+h1 {
+  color: #FF5722; /* Naranja brillante para destacar el título */
+}
+
+p, ul, li {
+  color: #333333; /* Gris oscuro para la mayoría del texto */
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #FF5722; /* Color naranja para los enlaces */
+  text-decoration: none;
+  font-weight: 700; /* Poner negrita a los enlaces */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+a:hover {
+  color: #D32F2F; /* Rojo cuando se pasa el ratón por encima */
+  text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Cambia el fondo de los enlaces activos en móviles */
+@media (max-width: 640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}
